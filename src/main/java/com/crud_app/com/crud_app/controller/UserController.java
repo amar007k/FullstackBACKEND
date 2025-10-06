@@ -18,7 +18,7 @@ import com.crud_app.com.crud_app.service.UserService;
 
 @RestController
 @CrossOrigin(origins = {
-	    "https://app-zeta-nine-17.vercel.app/",
+	    "https://app-zeta-nine-17.vercel.app",
 	    "http://localhost:3000"
 	})
 public class UserController {
@@ -26,7 +26,7 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 	
-	@PostMapping("/adduser")
+	@PostMapping("/user")
 	public User creatUser(@RequestBody User newUser) {
 		return userService.createUser(newUser);
 	
