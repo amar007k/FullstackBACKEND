@@ -18,7 +18,7 @@ import com.crud_app.com.crud_app.service.UserService;
 
 @RestController
 @CrossOrigin(origins = {
-	    "https://app-zeta-nine-17.vercel.app",
+	    "https://fullstackapp1.vercel.app",
 	    "http://localhost:3000"
 	})
 public class UserController {
